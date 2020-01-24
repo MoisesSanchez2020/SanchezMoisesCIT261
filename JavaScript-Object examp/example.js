@@ -1,0 +1,20 @@
+
+var student = new Object();
+      student.fName = "John";
+      student.lName = "Smith";
+      student.id = 5;
+      student.markE = 76;
+      student.markM = 99;
+      student.markS = 87;
+      student.calculateAverage = function()
+      {
+      	return (student.markE + student.markM + student.markS)/3;
+      };
+      student.displayDetails = function()
+      {
+        document.write("Student Id: " + student.id + "<br />");
+        document.write("Name: " + student.fName + " " + student.lName + "<br />");
+        var avg = student.calculateAverage();
+        document.write("Average Marks: " + avg);
+      };
+		student.displayDetails();
