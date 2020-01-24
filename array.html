@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>array</title>
+
+<script>
+
+
+
+function getLast() {
+
+	var list = [ -3, 0, 7.1, 5];
+	var value = addEnds(list);
+    document.getElementById('output').innerHTML = value;
+}
+// in my first code addEnds declare his on value, now run and eclare pruevaTest value.
+function addEnds(list){
+    var firstNum =  list[1] + list[list.length - 1];
+	return firstNum;
+}
+
+
+</script>
+</head>
+
+<body>
+<button type="button" onclick="getLast()">Get Result!</button>
+<div id="output"></div>
+
+</body>
+</html>
