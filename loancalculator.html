@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>loan calculator</title>
+
+<script>
+	 function computePayment() {
+       var principal = parseFloat(document.getElementById('principal').value);
+       var annualRate = parseFloat(document.getElementById('annualRate').value);
+       var years = parseFloat(document.getElementById('years').value);
+       var periodsPerYears = parseFloat(document.getElementById('periodsPerYears').value);
+       var payment = computePayment(principal, annualRate, years, periodsPerYears);
+
+       document.getElementById('outpayoff').innerHTML = payment;
+      }
+
+	
+       function computeBalance() {
+       	var principal = parseFloat(document.getElementById('principal').value);
+        var annualRate = parseFloat(document.getElementById('annualRate').value);
+        var years = parseFloat(document.getElementById('years').value);
+        var periodsPerYears = parseFloat(document.getElementById('periodsPerYears').value);
+        var payamentTotals = parseFloat(document.getElementById('payamentTotals').value);
+
+        var balance = balancesRun(principal, annualRate, years, periodsPerYears, payamentTotals);
+        document.getElementById('outoff').innerHTML = balance;
+
+       }
+
+
+      function calculationPayment(principal, annualRate, years, periodsPerYears) {
+      var x = annualRate / periodsPerYears;
+      var y = periodsPerYears * years;
+      var payment = principal * x / (1 - Math.pow((1 + x), -y));
+      return payment;
+      }
+
+      function calculationBalance(principal, annualRate, years, periodsPerYears, payamentTotals) {
+       var x = annualRate / periodsPerYears;
+       var z = computePayment(principal, annualRate, years, periodsPerYears);
+       var pow = Math.pow((1 + x), payamentTotals);
+       var balance = principal * pow - (z * (pow - 1) / x);
+       return balance;
+       }
+
+
+
+
+</script>
+
+
+</head>
+
+
+<body>
+
+	Amount Borrowed (principal)<input type="text" id="principal"><br>
+	Annual interest rate(.065)<input type="text" id="annualRate"><br>
+	Number of years<input type="text" id="years"><br>
+	Payments per years<input type="text" id="periodsPerYears"><br>
+	<button type="button" onclick="computePayment()">Compute payment</button><br>
+	<div id="outoff"></div>
+	Number of payments paid to date<input type="text" id="payamentTotals">calculate payments<br>
+    <button type="button" onclick="computeBalance()">Compute paytoff amount</button>
+    <div id="outpayoff"></div>
+
+</body>
+</html>

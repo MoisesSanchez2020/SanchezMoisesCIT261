@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8"><!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Multiply by Multiplier</title>
+<script>
+
+function multiplyByMultiplier(){
+var exampleArray = [-4, 3, 2.1, 6];
+var product = multiply(exampleArray, 2);
+
+alert(product);
+}
+//INPUT: Array has to be defined with multiplier.
+//PROCESSING:
+// 1. Set variable to return result set.
+// 2. Write for loop to evaluate each number in the array.
+// 3. Compute each index in the array by the multiplier.
+// 4. Return the result set.
+//OUTPUT: Multiplies each number in original array by multiplier.
+function multiply(list, multiplier){
+var result = [];
+for (var i = 0; i < list.length; i++) {
+result[i] = list[i] * multiplier;
+}
+return result;
+}
+
+</script>
+
+</head>
+
+<body>
+<button type="button" onclick="multiplyByMultiplier()">Multiply by Multiplier</button>
+</body>
+</html>
+<title>Count Even in Array</title>
+<script>
+
+
+
+function countEvens(list) {
+    var evens = [];
+    for (var i = 0; i < list.length; i++) {
+        if ((list[i] % 2) === 0) {
+            evens.push(list[i]);
+        }
+    }
+    return evens;
+}
+
+function setUp() {
+    var list = [ 17, 8, 9, 5, 20 ];
+    var count = countEvens(list);
+    document.getElementById('outputDiv1').innerHTML = count.length;
+}
+
+
+</script>
+</head>
+<body>
+
+<button type="button" onclick="setUp()">Enter</button><br/>
+</div>
+<div id="outputDiv"></div>
+<div id="outputDiv1"></div>
+</body>
+</html>

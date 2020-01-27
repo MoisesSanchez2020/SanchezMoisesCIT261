@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Depreciation Calculator</title>
+   
+<script>
+
+
+var moneyMore = function(id) {
+var startValue;
+var endValue;
+var months;
+
+    return document.getElementById(id);
+
+};       
+
+function depreciation() {
+
+
+    startValue = parseFloat(moneyMore("montoInicial").value);
+    if (isNaN(startValue)) {
+     
+    }
+    if (startValue <= 0) {    
+       
+    }
+    endValue  = parseFloat(moneyMore("valorFinal").value);
+    if (isNaN(endValue  ) || endValue    < 0) {
+ 
+    }
+    if (endValue >= startValue) {
+
+    }
+
+    months = parseFloat (moneyMore("months").value);
+    if (isNaN(months) || months <= 1) {
+        
+        return ;
+    }
+     //formula
+    var totalamount = (startValue - endValue )/months;
+    moneyMore("result").innerHTML =   totalamount.toFixed(2);
+    
+}
+////////////////////////////////////////////////////////////
+    //reload function
+    window.onload = function() {
+        
+    document.getElementById('calculadorDato').onclick = depreciation;
+
+};
+
+
+
+     </script>
+     </head>
+
+
+      <body>
+      <p> Depreciation Calculator</p>
+      <br>
+      
+    Start value<input  id="montoInicial" ><br>
+    End Value<input  id="valorFinal"  ><br>
+    Months <input id="months"  ><br>
+                  
+    <div id="result"></div>
+    <br>
+    <div id="buttons">
+  <button class="button" id="calculadorDato" onclick="">Calculate</button>
+         
+  </div>
+  </body>
+
+</html>
+
+
+
+
+
+
