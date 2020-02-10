@@ -1,0 +1,9 @@
+input{
+    width: 500px;
+    height: 50px;
+   
+    display: grid;
+    background-color:yellow;
+    margin:50px;
+    margin: auto;
+  }
