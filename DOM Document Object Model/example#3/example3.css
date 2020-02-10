@@ -1,0 +1,33 @@
+body{
+    background-color:lightblue;
+   }
+   
+   h1{
+     margin: auto;
+     width:400px;
+     height:200px;
+     border-radius:5px;
+     border-width: 10px;
+     border-style: solid;
+     background-color:yellow;
+     
+   }
+   .changeColor{
+      width:80px;
+     height:50px;
+     margin-left:50%;
+     margin-top:20px;
+     border-radius:5px;
+     border-style: solid;
+     border-width: 10px;
+     border-color: black;
+   }
+   .changeColor:hover {
+     background-color: yellow;
+   }
+   .change{
+     color:lightred;
+     font-size: 100px;
+     border: 10px solid white;
+     background:lightgreen;
+   }
