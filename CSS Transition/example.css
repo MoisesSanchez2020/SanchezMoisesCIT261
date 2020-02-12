@@ -1,0 +1,33 @@
+#content{
+    margin: auto;
+}
+
+#box {
+    width: 550px;
+    height: 500px;
+    margin: auto;
+    transition-duration: 4s;
+    animation-name: example;
+    position: relative; 
+    background-repeat: no-repeat;
+    background-image: 
+}
+
+#box2{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-repeat: no-repeat;
+    transition-duration: 2s;
+    position: relative; 
+    border-radius: 50px;
+}
+
+
+
+#box:hover {
+    background-color: pink;
+    width: 900px;
+    height: 600px;
+}
+    

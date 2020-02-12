@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="example.css" media="screen">
+ <script src="example.js"></script>
+    
+</head>
+  
+    <body>
+
+      <h2> CSS3 Transitions and Animations in CSS and triggering them with JavaScript</h2><br>
+      
+      <h3>Create Element </h3>
+   <button onclick="cElement('box2', '800px', 'green')">Turn me into a green popsicle stick!</button>
+   <button onclick="cElement('box2', '100px', 'maroon')">Turn me back into a circle</button>
+      
+    <div id="box2"></div>    
+        <div id="box"></div> 
+      <div id="smile"></div>
+     <br>
+    
+    <button type="button" onclick="animationBox()" >Click</button>
+   <hr>
+    
+  <h3>Transition</h3>
+
+    <button type="button" onclick="transitionBox('box', '1px')">Disappear</button>
+
+<hr>
+  <h3>Transform</h3>
+  <div type="button" onmouseover="transformBox('box', '900px')">Hover your mouse over here and see what happens with the box above</div>
+  </body>
+</html>
