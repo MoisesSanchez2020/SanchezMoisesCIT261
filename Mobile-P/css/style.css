@@ -13,6 +13,7 @@
     top: -100px;
     padding-bottom: 6px;
     font-family: "Montserrat", sans-serif;
+    
   }
   @media only screen and (max-width: 766px) {
     .main_h {
@@ -33,12 +34,15 @@
     opacity: 1;
     top: 0px;
     border-bottom: 1px solid gainsboro;
+    border: 1px solid rgb(14, 13, 13);
+    background: rgb(70, 68, 68);
+    
   }
   
   .logo {
     width: 50px;
     font-size: 25px;
-    color: #3f3e3e;
+    color: #eee7e7;
     text-transform: uppercase;
     float: left;
     display: block;
@@ -55,6 +59,7 @@
   nav {
     float: right;
     width: 60%;
+    
   }
   @media only screen and (max-width: 766px) {
     nav {
@@ -66,6 +71,7 @@
     overflow: hidden;
     text-align: right;
     float: right;
+    
   }
   @media only screen and (max-width: 766px) {
     nav ul {
@@ -80,6 +86,7 @@
     display: inline-block;
     margin-left: 35px;
     line-height: 1.5;
+    
   }
   @media only screen and (max-width: 766px) {
     nav ul li {
@@ -89,9 +96,10 @@
     }
   }
   nav ul a {
-    color: #888888;
+    color: #f0ebeb;
     text-transform: uppercase;
     font-size: 12px;
+    
   }
   
   .mobile-toggle {
@@ -116,8 +124,10 @@
     height: 4px;
     margin-bottom: 6px;
     border-radius: 1000px;
-    background: #8f8f8f;
+    background: #f5f1f1;
     display: block;
+    
+  
   }
   
   .row {
@@ -126,7 +136,8 @@
     margin: 0 auto;
     position: relative;
     padding: 0 2%;
-  }
+    
+  } 
   
   * {
     box-sizing: border-box;
@@ -249,3 +260,46 @@
     }
   }
   
+
+  .container-abajo {
+    margin: 5em 0 1.7em 0;
+    padding: 1em;
+  }
+  footer{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Domine', serif;
+     text-align: center;
+     font-size: 1.5vw;
+  }
+  
+  
+  footer{
+    background-color: rgb(224, 215, 215);
+  }
+  #footend-copy {
+    display: block;
+    color: white;
+    border: 1px solid rgb(14, 13, 13);
+    background: rgb(70, 68, 68);
+    border-radius: 5px 5px 5px 5px;
+    text-decoration: none;
+    line-height: 2em;
+    padding: .5rem;
+  }
+
+#footend-copy a:link, #footend-copy a:visited {
+    color: white;
+  }
+  
+  
+  
+  
+  /*----- Clearfix:  -----*/
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
