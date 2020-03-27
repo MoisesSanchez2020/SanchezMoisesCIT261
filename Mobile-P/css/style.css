@@ -167,10 +167,13 @@
     margin-bottom: 20px;
     font-size: 17px;
     line-height: 2;
-    color: #161515;
+    color: #070707;
     font-family: 'Montserrat', sans-serif;
+
   }
   
+
+
   .content {
     padding: 50px 2% 250px;
   }
@@ -303,3 +306,7 @@
     display: table;
     clear: both;
   }
+
+
+
+  
